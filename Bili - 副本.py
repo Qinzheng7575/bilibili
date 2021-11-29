@@ -35,7 +35,7 @@ class Bili_Vdou:
 
     def Get_video(self,count,n):
         url_temp=self.URL_video_1+str(n)+self.URL_video_2
-
+        #pn=page number
         # data = requests.get(self.URL_video, headers=self.header)
         data = requests.get(url_temp, headers=self.header)
         if data.status_code == 200:
